@@ -4,22 +4,19 @@
 /*jslint devel: true, node: true, vars: true*/
 "use strict"; // required by jslint
 
-
-//Hamburger Menu
+//Hamburger menu
 
 $(document).ready(function() {
-
+    
     $(".cross").hide();
-    $(".menu").hide();
-    $(".hamburger").show();
-
+    
     $(".hamburger").on("click", function() {
-          
-            $(".menu").slideToggle("slow");
         
-            $(".cross").show();
+        $(".menu").slideToggle("slow");
         
-            $(".hamburger").hide();  
+        $(".cross").show();
+        
+        $(".hamburger").hide();  
         
     });
     

@@ -1,9 +1,18 @@
 <nav>
-    <ul>
-        <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
-        <li><a href="<?php echo BASE_URL; ?>event.html.php">Event</a></li>
-        <li><a href="<?php echo BASE_URL; ?>registration.html.php">Registration</a></li>
-        <li><a href="<?php echo BASE_URL; ?>contact.html.php">Contact Us</a></li>
-        <li><a href="<?php echo BASE_URL; ?>faqs.html.php">FAQs</a></li>
-    </ul>
+    
+    <div class="nav_toggle">
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </div>
+    
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </div> 
+    
 </nav>
