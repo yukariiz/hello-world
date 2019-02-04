@@ -5,7 +5,7 @@
 <head>
     <title>Ace in the Hole Multisport Events</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.less" rel="stylesheet/less" type="text/css"> 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 </head>

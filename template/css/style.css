@@ -8,38 +8,31 @@
 body {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
 }
-header {
+header p {
+  background-color: #c0c0c0;
+  height: 35px;
+  text-align: right;
   margin: 0;
   padding: 0;
-}
-.header1 {
-  background-color: #c0c0c0;
-  overflow: hidden;
-  height: 35px;
-}
-.header1 p {
-  text-align: right;
 }
 .logo {
   margin: 0;
   padding: 0;
   float: left;
-  display: block;
+  width: 10%;
 }
-.header2 {
-  background-color: #e10000;
-  overflow: hidden;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  box-sizing: border-box;
+img {
+  width: 100%;
+  height: auto;
 }
 h1 {
   margin: 0;
-  padding-left: 50px;
-  float: left;
+  background-color: #e10000;
   color: white;
+  font-size: 3vw;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 nav {
   background-color: black;
@@ -78,26 +71,21 @@ aside p {
   text-align: center;
   padding-top: 50px;
 }
-footer {
+footer p {
   margin: 0;
-  padding: 0;
-  clear: both;
-  overflow: hidden;
-}
-.footer1 {
   background-color: black;
-  overflow: hidden;
-}
-.footer1 p {
   color: white;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  clear: both;
 }
-.footer2 {
+hr {
   background-color: #e10000;
-  overflow: hidden;
-  height: 25px;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  border: none;
 }
 @media only screen and (max-width: 600px) {
   .menu {
@@ -113,7 +101,7 @@ footer {
 
 =============================*/
 /* TABLET STYLES */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   .menu ul li {
     float: left;
     display: inline-block;
@@ -126,7 +114,7 @@ footer {
   }
 }
 /* DESKTOP STYLES */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 961px) {
   nav {
     width: 75%;
     float: left;

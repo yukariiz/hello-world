@@ -15,43 +15,31 @@
 body {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
 }
 
 header {
-    margin: 0;
-    padding: 0;
-}
-
-.header1 {
-    background-color: @bg-color4;
-    overflow: hidden;
-    height: 35px;
-    p {
-        text-align: right;
-    }
-}
-
-.logo {
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: block;
-}
-
-.header2 {
     background-color: @bg-color3;
     overflow: hidden;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    box-sizing: border-box;  
-}  
+}
+
+header p {
+    background-color: @bg-color4;
+    height: 45px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 20px 30px 0 15px;
+    float: left;
+}
 
 h1 {
-    margin: 0;
-    padding-left: 50px;
-    float: left;
     color: @bg-color;
+    font-size: 3vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -96,28 +84,22 @@ aside {
     }
 }
 
-footer {
+footer p {
+    margin: 0;
+    background-color: @bg-color2;
+    color: @bg-color;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    clear: both;
+}
+
+hr {
+    background-color: @bg-color3;
     margin: 0;
     padding: 0;
-    clear: both;
-    overflow: hidden;
-}
-
-.footer1 {
-    background-color: @bg-color2;
-    overflow: hidden;
-    p {
-        color: @bg-color;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-}
-
-.footer2 {
-    background-color: @bg-color3;
-    overflow: hidden;
-    height: 25px;
+    height: 30px;
+    border: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -139,7 +121,7 @@ footer {
 
 /* TABLET STYLES */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
       
     .menu ul li {
             float: left;  
@@ -158,7 +140,7 @@ footer {
 
 /* DESKTOP STYLES */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 961px) {
     
     nav {
         width: 75%;
