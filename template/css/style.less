@@ -45,9 +45,7 @@ h1 {
 nav {
     background-color: @bg-color2;
     overflow: hidden;
-}
-
-.menu ul {
+    ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -57,11 +55,12 @@ nav {
             line-height: 30px;
             text-align: center;
             a {
-            color: @bg-color;
-            text-decoration: none;
+                color: @bg-color;
+                text-decoration: none;
             }
         
         }
+    }
 }
 
 article {
@@ -104,12 +103,12 @@ hr {
 
 @media only screen and (max-width: 600px) {
     
-     .menu {
-         display: none;
-         ul li {
-             border-bottom: 1px solid @bg-color4;
-         }   
-     }
+    nav ul {
+        display: none;
+        li {
+            border-bottom: 1px solid @bg-color4;
+        }   
+    }
 }
 
 /*============================
@@ -123,7 +122,7 @@ hr {
 
 @media only screen and (min-width: 601px) {
       
-    .menu ul li {
+    nav ul li {
             float: left;  
             display: inline-block;
             width:  20%;
@@ -131,7 +130,7 @@ hr {
             border-left: 1px solid @bg-color4;
     }
     
-    .nav_toggle {
+    button {
         display: none;
     }
     

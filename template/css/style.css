@@ -9,47 +9,43 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  background-color: #e10000;
+  overflow: hidden;
+}
 header p {
   background-color: #c0c0c0;
-  height: 35px;
+  height: 45px;
   text-align: right;
   margin: 0;
   padding: 0;
 }
-.logo {
-  margin: 0;
-  padding: 0;
-  float: left;
-  width: 10%;
-}
 img {
-  width: 100%;
-  height: auto;
+  margin: 20px 30px 0 15px;
+  float: left;
 }
 h1 {
-  margin: 0;
-  background-color: #e10000;
   color: white;
   font-size: 3vw;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 nav {
   background-color: black;
   overflow: hidden;
 }
-.menu ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-.menu ul li {
+nav ul li {
   height: 30px;
   line-height: 30px;
   text-align: center;
 }
-.menu ul li a {
+nav ul li a {
   color: white;
   text-decoration: none;
 }
@@ -84,14 +80,14 @@ hr {
   background-color: #e10000;
   margin: 0;
   padding: 0;
-  height: 35px;
+  height: 30px;
   border: none;
 }
 @media only screen and (max-width: 600px) {
-  .menu {
+  nav ul {
     display: none;
   }
-  .menu ul li {
+  nav ul li {
     border-bottom: 1px solid #c0c0c0;
   }
 }
@@ -102,14 +98,14 @@ hr {
 =============================*/
 /* TABLET STYLES */
 @media only screen and (min-width: 601px) {
-  .menu ul li {
+  nav ul li {
     float: left;
     display: inline-block;
     width: 20%;
     box-sizing: border-box;
     border-left: 1px solid #c0c0c0;
   }
-  .nav_toggle {
+  button {
     display: none;
   }
 }

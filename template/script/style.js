@@ -12,7 +12,7 @@ $(document).ready(function() {
     
     $(".hamburger").on("click", function() {
         
-        $(".menu").slideToggle("slow");
+        $("ul").slideDown("slow");
         
         $(".cross").show();
         
@@ -22,7 +22,7 @@ $(document).ready(function() {
     
     $(".cross").on("click", function() {
        
-        $(".menu").slideToggle("slow");
+        $("ul").slideUp("slow");
         
         $(".cross").hide();
         
