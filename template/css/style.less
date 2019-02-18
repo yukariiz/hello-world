@@ -6,13 +6,18 @@
 
 /* colors */
 
-@bg-color: white;
-@bg-color2: black;
+@bg-color: #ffffff;
+@bg-color2: #1B1B1B;
 @bg-color3: rgb(225,0,0);
-@bg-color4: #c0c0c0;
+@bg-color4: #C0C0C0;
+@bg-color5: #FF9900; 
 
+/* font */
 
-body {
+@header: 'Muli', sans-serif;
+@paragraph: 'Roboto', sans-serif; 
+
+body, main {
     width: 100%;
     margin: 0 auto;
 }
@@ -30,42 +35,147 @@ header p {
     padding: 0;
 }
 
-img {
+.logo {
     margin: 20px 30px 0 15px;
     float: left;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     color: @bg-color;
-    font-size: 3vw;
+    font-family: @header; 
+    font-weight: bolder;
+    font-size: 3.2vw;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+h2 {
+    font-family: @header;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-family: @header;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 15px;
 }
 
 nav {
     background-color: @bg-color2;
     overflow: hidden;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        li {
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            a {
-                color: @bg-color;
-                text-decoration: none;
-            }
-        
-        }
+}
+
+/* Links inside the navbar */
+
+nav a {
+    color: @bg-color;
+    font-family: @header;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* Dropdown button */
+
+.event {
+    color: @bg-color;
+    font-family: @header;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+
+.event-content {
+    display: none;
+    position: absolute;
+    background-color: @bg-color2;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Links inside the dropdown */
+
+.event-content a {
+    color: @bg-color;
+    font-family: @header;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid @bg-color4;
+}
+
+/* Add a background color to navbar links on hover */
+
+nav a:hover, .dropdown:hover .event {
+    background-color: @bg-color4;
+    color: @bg-color3;
+}
+
+/* Add a background color to dropdown links on hover */
+
+.event-content a:hover {
+    background-color: @bg-color4;
+    color: @bg-color3;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .event-content {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    button {
+        float: left;
+    }
+    
+    .dropdown {
+        width: 100%;
+    }
+    
+    .event-content {
+        width: auto;
+    }
+    
+    nav a, .event {
+        display: none;
+        clear: both;
+        border-bottom: 1px solid @bg-color4;
     }
 }
 
 article {
     background-color: @bg-color;
-    height: 370px;
+    overflow: hidden;
+    p {
+        font-family: @paragraph;
+        padding-left: 80px;
+        font-size: 17px;
+        padding-right: 40px;
+    }
+}
+
+aside {
+    background-color: @bg-color4;
     overflow: hidden;
     p {
         text-align: center;
@@ -73,13 +183,12 @@ article {
     }
 }
 
-aside {
-    background-color: @bg-color4;
-    height: 400px;
-    overflow: hidden;
-    p {
-        text-align: center;
-        padding-top: 50px;
+ul {
+    padding-left: 100px;
+    li {
+        padding-bottom: 10px;
+        list-style-type: square;
+        font-family: @paragraph;
     }
 }
 
@@ -87,6 +196,7 @@ footer p {
     margin: 0;
     background-color: @bg-color2;
     color: @bg-color;
+    font-family: @paragraph;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -101,18 +211,140 @@ hr {
     border: none;
 }
 
-@media only screen and (max-width: 600px) {
-    
-    nav ul {
-        display: none;
-        li {
-            border-bottom: 1px solid @bg-color4;
-        }   
-    }
+/* Event Page */
+
+table {
+    border-collapse: collapse;
+    margin-left: 70px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid @bg-color2;
+}
+
+.course {
+    width: 15%;
+    text-align: center;
+    font-family: @paragraph;
+}
+
+.distance {
+    width: 10%;
+    text-align: center;
+    font-family: @paragraph;
+}
+
+.description {
+    width: 75%;
+    padding: 10px;
+    font-family: @paragraph;
+}
+
+/* Registration Page */
+
+#registration {
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.name, .email, .emergency_name, .emergency_contact {
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid @bg-color2;
+}
+
+.age {
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid @bg-color2;
+}
+
+.accommodations {
+    width: 350px;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid @bg-color2;
+}
+
+label {
+    display: inline-block;
+    font-size: 18px;
+    font-family: @paragraph;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+span {
+    padding-left: 30px;
+    text-decoration: underline;
+}
+
+.event1, .event2 {
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+.submit {
+    width: 90px;
+    height: 35px;
+    color: @bg-color;
+    background-color: @bg-color5;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    background-color: @bg-color3;  
+}
+
+/* Contact Page */
+
+#contact {
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.comment {
+    width: 380px;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid @bg-color2;
+}
+
+/* FAQs Page */
+
+.question1, .question2, .question3, .question4, .question5 {
+  padding: 15px;
+  color: @bg-color2; 
+  background-color: @bg-color4;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.question1:hover, .question2:hover, .question3:hover, .question4:hover, .question5:hover {
+    background-color: @bg-color5; 
+}
+
+.answer1, .answer2, .answer3, .answer4, .answer5 {
+  display: none;
+  padding: 10px;
+  overflow: hidden;
+  color: @bg-color2;
+  background-color: @bg-color;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 /*============================
-
+  
       RESPONSIVE STYLE
 
 =============================*/
@@ -122,14 +354,38 @@ hr {
 
 @media only screen and (min-width: 601px) {
       
-    nav ul li {
-            float: left;  
-            display: inline-block;
-            width:  20%;
-            box-sizing: border-box;
-            border-left: 1px solid @bg-color4;
+    nav a {
+        float: left;  
+        display: inline-block;
+        width: 20%;
+        box-sizing: border-box;
+        border-left: 1px solid @bg-color4;    
     }
     
+    nav a, .event {
+        display: block !important;
+    }
+    
+    .dropdown {
+        width: 20%;
+        border-left: 1px solid @bg-color4; 
+    }
+    
+    .event { 
+        font-family: @header;
+    }
+    
+    .event-content {
+        width: 20%;
+   }
+
+    .event-content a {
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+   } 
+  
     button {
         display: none;
     }
@@ -144,6 +400,13 @@ hr {
     nav {
         width: 75%;
         float: left;
+        a, .event {
+            display: block !important;
+        }
+    }
+    
+    html, body, main {
+        height: 100%;
     }
     
     article{
@@ -154,6 +417,7 @@ hr {
     aside {
         width: 25%;
         float: right;
+        height: 100%;
     }    
     
 }

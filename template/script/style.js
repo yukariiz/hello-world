@@ -12,7 +12,7 @@ $(document).ready(function() {
     
     $(".hamburger").on("click", function() {
         
-        $("ul").slideDown("slow");
+        $("a, .event").slideDown("slow");
         
         $(".cross").show();
         
@@ -22,7 +22,7 @@ $(document).ready(function() {
     
     $(".cross").on("click", function() {
        
-        $("ul").slideUp("slow");
+        $("a, .event").slideUp("slow");
         
         $(".cross").hide();
         
@@ -30,4 +30,38 @@ $(document).ready(function() {
         
     });
 
+});
+
+$(document).ready(function(){
+  
+    $(".question1").click(function(){
+    
+        $(".answer1").slideToggle("slow");
+        
+    });
+    
+    $(".question2").click(function(){
+    
+        $(".answer2").slideToggle("slow");
+        
+    });
+    
+    $(".question3").click(function(){
+    
+        $(".answer3").slideToggle("slow");
+        
+    });
+    
+    $(".question4").click(function(){
+    
+        $(".answer4").slideToggle("slow");
+        
+    });
+    
+    $(".question5").click(function(){
+    
+        $(".answer5").slideToggle("slow");
+        
+    });   
+    
 });
