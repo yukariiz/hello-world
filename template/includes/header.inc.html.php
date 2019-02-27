@@ -2,11 +2,9 @@
 
 <header>
     
-    <p>social media icons go here</p>
-    
     <div class="logo">
     
-        <img src="<?php echo BASE_URL; ?>image/logo-Ace.png" alt="Company Logo"> 
+        <a href="<?php echo BASE_URL; ?>index.html.php"><img src="<?php echo BASE_URL; ?>image/logo.png" alt="Company Logo"></a>
     
     </div>
     

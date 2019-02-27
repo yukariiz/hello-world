@@ -12,7 +12,7 @@ $(document).ready(function() {
     
     $(".hamburger").on("click", function() {
         
-        $("a, .event").slideDown("slow");
+        $(".menu").slideDown("slow");
         
         $(".cross").show();
         
@@ -22,15 +22,23 @@ $(document).ready(function() {
     
     $(".cross").on("click", function() {
        
-        $("a, .event").slideUp("slow");
+        $(".menu").slideUp("slow");
         
         $(".cross").hide();
         
         $(".hamburger").show();
         
     });
+    
+     $(".event-list").on("click", function() {
+       
+        $(".dropdown").slideToggle("slow");
+         
+    });
 
 });
+
+//FAQs
 
 $(document).ready(function(){
   

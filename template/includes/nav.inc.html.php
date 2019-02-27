@@ -3,23 +3,23 @@
     <button class="hamburger">&#9776;</button>
     <button class="cross">&#735;</button>
     
-    <a href="<?php echo BASE_URL; ?>index.html.php">Home</a>
+    <ul class="menu">
+        <li><a href="<?php echo BASE_URL; ?>index.html.php">Home</a></li>    
+        <li><a href="#" class="event-list">Event</a>
+             
+            <ul class="dropdown">
+                <li><a href="<?php echo BASE_URL; ?>event/event1.html.php">Event Date &amp; Schedule</a></li>
+                <li><a href="<?php echo BASE_URL; ?>event/event2.html.php">Course Details</a></li>
+                <li><a href="<?php echo BASE_URL; ?>event/event3.html.php">What to Bring</a></li>
+                <li><a href="<?php echo BASE_URL; ?>event/event4.html.php">Event Fee &amp; Packet Pick Up</a></li>
+            </ul>
            
-    <div class="dropdown">
-        
-        <p class="event">Event</p>
+        </li>
+        <li><a href="<?php echo BASE_URL; ?>registration">Registration</a></li>
+        <li><a href="<?php echo BASE_URL; ?>contact">Contact Us</a></li>
+        <li><a href="<?php echo BASE_URL; ?>faq.html.php">FAQs</a></li>
+    </ul>
     
-        <div class="event-content">
-            <a href="<?php echo BASE_URL; ?>event/event1.html.php">Date &amp; Schedule</a>
-            <a href="<?php echo BASE_URL; ?>event/event2.html.php">Course Details</a>
-            <a href="<?php echo BASE_URL; ?>event/event3.html.php">What to Bring</a>
-            <a href="<?php echo BASE_URL; ?>event/event4.html.php">Event Fee &amp; Packet Pick Up</a>
-        </div>
-        
-    </div> 
-    
-        <a href="<?php echo BASE_URL; ?>registration">Registration</a>
-        <a href="<?php echo BASE_URL; ?>contact">Contact Us</a>
-        <a href="<?php echo BASE_URL; ?>faq.html.php">FAQs</a>
+    <br class="clear" />
     
 </nav>
