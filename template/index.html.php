@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.less" rel="stylesheet/less" type="text/css"> 
     <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:700, Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:700|Roboto" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
     <!-- Font Awesome CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -38,12 +38,47 @@
             
             <div class="gallery">
                 
-                <img src="image/running1.jpg" class="mobile-image" alt="Triathlon running">
-                <img src="image/running2.jpg" class="dk-tb-image" alt="Triathlon running">
-                <img src="image/biking1.jpg" class="dk-tb-image" alt="Triathlon biking">
-                <img src="image/biking2.png" class="dk-tb-image" alt="Triathlon biking">
-                <img src="image/swimming1.jpg" class="dk-tb-image" alt="Triathlon swimming">
-                <img src="image/swimming2.jpg" class="dk-tb-image" alt="Triathlon swimming">
+                <img src="image/running1.jpg" id="myImg1" class="mobile-image" alt="Triathlon running">
+                
+                <div id="myModal1" class="modal">
+                    <span class="close1">&times;</span>
+                    <img src="image/running1.jpg" class="modal-content">
+                </div>
+                
+                <img src="image/running2.jpg" id="myImg2" class="dk-tb-image" alt="Triathlon running">
+                
+                <div id="myModal2" class="modal">
+                    <span class="close2">&times;</span>
+                    <img src="image/running2.jpg" class="modal-content">
+                </div>
+                
+                <img src="image/biking1.jpg" id="myImg3" class="dk-tb-image" alt="Triathlon biking">
+                
+                <div id="myModal3" class="modal">
+                    <span class="close3">&times;</span>
+                    <img src="image/biking1.jpg" class="modal-content">
+                </div>
+                
+                <img src="image/biking2.png" id="myImg4" class="dk-tb-image" alt="Triathlon biking">
+                
+                <div id="myModal4" class="modal">
+                    <span class="close4">&times;</span>
+                    <img src="image/biking2.png" class="modal-content">
+                </div>
+                
+                <img src="image/swimming1.jpg" id="myImg5" class="dk-tb-image" alt="Triathlon swimming">
+                
+                <div id="myModal5" class="modal">
+                    <span class="close5">&times;</span>
+                    <img src="image/swimming1.jpg" class="modal-content">
+                </div>
+               
+                <img src="image/swimming2.jpg" id="myImg6" class="dk-tb-image" alt="Triathlon swimming">
+                
+                <div id="myModal6" class="modal">
+                    <span class="close6">&times;</span>
+                    <img src="image/swimming2.jpg" class="modal-content">
+                </div>
                 
             </div>
         

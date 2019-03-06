@@ -26,7 +26,7 @@
   
     <article>
         
-        <div class="textblock">
+        <div class="textblock, bottom-faqs">
         
         <h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
         

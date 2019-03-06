@@ -21,6 +21,12 @@ body, main {
     width: 100%;
     padding: 0;
     font-family: @paragraph;
+    background-color: @bg-color4;
+}
+
+body .success-page {
+    background-color: @bg-color;
+    padding-bottom: 50px;
 }
 
 header {
@@ -68,7 +74,6 @@ nav {
             padding-bottom: 7px;
             a {
                 color: @bg-color;
-                font-family: @paragraph;
                 text-align: center;
                 text-decoration: none;
                 font-size: 1em;
@@ -94,7 +99,7 @@ nav .menu li .dropdown {
     }
 }
 
- nav .menu li:hover .dropdown {
+nav .menu li:hover .dropdown {
         display: block;
     }
 
@@ -118,8 +123,6 @@ h2 {
     font-size: 1em;
     padding: 10px;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: @bg-color4;
 }
 
 h3 {
@@ -127,8 +130,6 @@ h3 {
     font-size: 0.9em;
     padding-left: 10px;
     padding-top: 10px;
-    text-decoration: underline;
-    text-decoration-color: @bg-color5;
 }
 
 .center {
@@ -180,7 +181,6 @@ p a:hover {
 }
 
 aside {
-    background-color: @bg-color4;
     overflow: hidden;
     p {
         text-align: center;
@@ -211,6 +211,14 @@ footer {
     }
 }
 
+footer p:hover {
+    color: @bg-color4;
+}
+
+.footer-link:hover, .copyright:hover {
+    color: @bg-color;
+}
+
 .social-icons {
     float: right;
     display: block;
@@ -221,6 +229,11 @@ footer {
 .fa-facebook, .fa-twitter-square {
     color: @bg-color;
     font-size: 1.5em;
+    cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-twitter-square:hover {
+    color: @bg-color5;
 }
 
 .footer-link a:hover {
@@ -241,7 +254,8 @@ footer {
 /* Event Page */
 
 table {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
 }
 
 td {
@@ -347,11 +361,11 @@ span {
 }
 
 .submit {
-    width: 80px;
-    height: 30px;
+    width: 85px;
+    height: 40px;
     color: @bg-color;
     background-color: @bg-color5;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     float: left;
     margin: 20px 0 20px 20px; 
@@ -376,6 +390,14 @@ span {
 .contact-list {
         padding-top: 20px;
     }
+
+.bottom-contact {
+    padding: 1em;
+}
+
+.bottom-faqs {
+    padding: 1em;
+}
 
 /* Success page */
 
@@ -424,7 +446,8 @@ span {
         }
     }
 
-    .dk-tb-image {
+    .dk-tb-image, .modal-content, .close1, .close2,
+    .close3, .close4, .close5, .close6 {
         display: none;
     }
 
@@ -514,6 +537,14 @@ span {
     .textblock {
         padding: 2em;
     }
+    
+    .bottom-contact {
+        padding: 2em;
+    }
+
+    .bottom-faqs {
+        padding: 2em;
+    }
 
     h2 {
         font-size: 1.3em;
@@ -552,7 +583,73 @@ span {
         float: left;
         width: 33%;
         padding: 10px 10px 25px 10px;
+        cursor: pointer;
     }
+    
+    .gallery img:hover {
+        opacity: 0.7;
+    }
+    
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        top: 0;
+        left:0;
+        width: 100%; /* Full width */
+        height: 100%; 
+        background-color: @bg-color2; /* Fallback color */
+        background-color: rgba(0,0,0,0.8); 
+    }
+    
+    .modal img {
+        display: block;
+        width: 75%;
+        padding-top: 100px;
+        padding-left: 200px;
+    }
+    
+    .modal img:hover {
+        opacity: 1;
+    }
+    
+    /* Add Animation */
+    .modal-content {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    
+    .close1, .close2, .close3, .close4, .close5, .close6 {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: @bg-color;
+        font-size: 3em;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close1:hover, .close2:hover, .close3:hover, 
+    .close4:hover, .close5:hover, .close6:hover {
+        color: @bg-color4;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 
     h3 {
         font-size: 1.3em;
@@ -721,9 +818,6 @@ span {
 
 @media only screen and (min-width: 992px) {
 
-    html, body, main {
-        height: 100%;
-    }
 
     .logo img {
         width: 150px;
@@ -758,6 +852,81 @@ span {
         width: 30%;
         float: right;
     }
+    
+    .success-page {
+        width: 100%;
+    }
+     
+    .gallery img {
+        float: left;
+        width: 33%;
+        padding: 10px 10px 25px 10px;
+        cursor: pointer;
+    }
+    
+    .gallery img:hover {
+        opacity: 0.7;
+    }
+    
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        top: 0;
+        left:0;
+        width: 100%; /* Full width */
+        height: 100%; 
+        background-color: @bg-color2; /* Fallback color */
+        background-color: rgba(0,0,0,0.8); 
+    }
+    
+    .modal img {
+        display: block;
+        width: 65%;
+        padding-top: 100px;
+        padding-left: 200px;
+    }
+    
+    .modal img:hover {
+        opacity: 1;
+    }
+    
+    /* Add Animation */
+    .modal-content {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    
+    .close1, .close2, .close3, .close4, .close5, .close6 {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: @bg-color;
+        font-size: 3em;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close1:hover, .close2:hover, .close3:hover, 
+    .close4:hover, .close5:hover, .close6:hover {
+        color: @bg-color4;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
     .weatherwidget-io {
         margin: 45px 15px 10px 15px;
@@ -773,7 +942,7 @@ span {
     }
     
     .twitter-block {
-        padding: 0 15px 50px 15px;
+        padding: 0 15px 30px 15px;
     }
     
     footer p {
@@ -893,12 +1062,17 @@ span {
         padding-bottom: 10px;
     }
     
+     .bottom-contact {
+        padding: 2em;
+        padding-bottom: 400px;
+    }
+    
     /* Success page */
     
     .form-submit {
         font-size: 1.4em;
     }
-
+       
     /* FAQs Page */
 
     .faqs-box {
@@ -909,6 +1083,10 @@ span {
     .answer1, .answer2, .answer3, .answer4, .answer5 {
         padding-bottom: 0;
     }
-
+    
+    .bottom-faqs {
+        padding: 2em;
+        padding-bottom: 230px;
+    }
 
 }

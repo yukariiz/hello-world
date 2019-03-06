@@ -26,7 +26,7 @@
 
     <article>
         
-        <div class="textblock">
+        <div class="textblock, bottom-contact">
         
         <h2>CONTACT FORM</h2>
         
@@ -38,7 +38,7 @@
                 <label for="name">Name:</label>
                 <input type="text" name="name" class="name" required><br>
                 </div>    
-            
+                
                 <div class="contact-list">
                 <label for="email">Email address:</label>
                 <input type="email" name="email" class="email" required><br>

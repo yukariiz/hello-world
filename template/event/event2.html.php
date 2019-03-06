@@ -33,6 +33,8 @@
              <h2>COURSE DETAILS</h2>
         
                  <p><strong>Water temperature</strong> is expected to be between 62 – 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.</p>
+            
+                  <p><b>- Long Course Triathlon - </b></p>
              
              <table>
                  
@@ -53,6 +55,8 @@
                  </tr>
                  
              </table>
+            
+            <p><b>- Olympic Triathlon -</b></p>
              
              <table>
                  

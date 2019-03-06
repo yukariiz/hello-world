@@ -23,7 +23,7 @@
     
 <main>
     
-    <article>
+    <article class="success-page">
         
         <div class="textblock">
         
@@ -42,7 +42,7 @@
               <b>Accomodations</b>: <?php echo htmlspecialchars($accommodations, ENT_QUOTES, 'UTF-8'); ?>
             </p>
             
-            <a href="<?php echo BASE_URL; ?>index.html.php"><button class="submit">Go back to Home</button></a>
+            <a href="<?php echo BASE_URL; ?>index.html.php"><button class="submit">Back to Home</button></a>
             
          </div>
         

@@ -24,7 +24,7 @@
     
 <main>
       
-    <article>
+    <article class="success-page">
         
         <div class="textblock">
         
